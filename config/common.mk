@@ -83,6 +83,9 @@ PRODUCT_COPY_FILES += \
 # Versioning
 -include vendor/omni/config/version.mk
 
+# easy way to extend to add more packages
+-include vendor/extra/product.mk
+
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/common
 
