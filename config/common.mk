@@ -67,9 +67,6 @@ PRODUCT_COPY_FILES += \
 # Versioning
 -include vendor/omni/config/version.mk
 
-# easy way to extend to add more packages
--include vendor/extra/product.mk
-
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/common
 
@@ -86,3 +83,4 @@ ifeq ($(ROM_BUILDTYPE),SECURITY_RELEASE)
     WITH_DEXPREOPT := true
 endif
 
+$(call inherit-product-if-exists, vendor/extra/product.mk)
