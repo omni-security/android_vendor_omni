@@ -1,3 +1,7 @@
+# Remove packages unsafe or unused default packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Additional packages
 PRODUCT_PACKAGES += \
     Basic \
@@ -38,4 +42,3 @@ PRODUCT_PACKAGES += \
     ntfsfix \
     ntfs-3g \
     mkntfs
-
