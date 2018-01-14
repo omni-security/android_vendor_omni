@@ -8,7 +8,6 @@ endif
 # Additional apps
 PRODUCT_PACKAGES += \
     Apollo \
-    Lightning \
     MonthCalendarWidget \
     OpenDelta \
     OmniSwitch \
